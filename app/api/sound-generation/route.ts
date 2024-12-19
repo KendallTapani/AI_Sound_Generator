@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
     try {
-        const apiKey = "sk_b4ab1b86dd677775b011c8fa140ffd3cc5c988fc4935c304"; //normally stored in .env file
+        const apiKey = "api_key_here"; //normally stored in .env file
         if (!apiKey) { //check if api key is set
             console.error("ELEVEN_LABS_API_KEY is not set");
             return NextResponse.json({ //return error message
